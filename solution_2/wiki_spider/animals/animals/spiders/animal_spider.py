@@ -11,7 +11,6 @@ class AnimalsSpider(scrapy.Spider):
     name = "animals"
     allowed_domains = ALLOWED_DOMAINS
     start_urls = START_URLS
-
     letter_counts = defaultdict(int)
 
     def parse(self, response):
